@@ -17,3 +17,4 @@ try:
         print("Неверно")
 except ValueError:
     print("Ошибка")
+    print("Ошибка")

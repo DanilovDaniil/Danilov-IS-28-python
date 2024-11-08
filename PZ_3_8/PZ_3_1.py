@@ -7,8 +7,8 @@ try:
     a1 = (a % 2) == 1
     b1 = (b % 2) == 1
     x = a1 and b1
-    print("a нечётное: ", a1)
-    print("b нечётное: ", b1)
-    print("a и b нечётны: ", x)
+    print("a: ", a1)
+    print("b: ", b1)
+    print("a и b: ", x)
 except ValueError:
     print("Ошибка")

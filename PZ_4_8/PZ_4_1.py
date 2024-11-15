@@ -3,8 +3,9 @@
 try:
     a = int(input('Введите число "a" '))
     b = int(input('Введите число "b" '))
-    if a <= b:
-        print("Сумма квадратов целых чисел", a * a + b * b)
+    if a < b:
+        c = sum(i**2 for i in range(a, b + 1))
+        print("Сумма квадратов целых чисел", c)
     else:
         print("Ошибка")
 except ValueError:

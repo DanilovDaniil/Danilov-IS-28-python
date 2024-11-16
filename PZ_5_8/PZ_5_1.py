@@ -10,4 +10,3 @@ try:
     stars(n)
 except ValueError:
     print("Ошибка")
-    print("Error")

@@ -6,7 +6,7 @@ try:
     def stars(m):
         for i in range(1, m + 1):
             print('*' * i)
-    n = int(input("Ведите количество строк: "))
-    stars(n)
+    m_ = int(input("Ведите количество строк: "))
+    stars(m_)
 except ValueError:
     print("Ошибка")

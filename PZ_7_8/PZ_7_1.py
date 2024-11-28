@@ -8,4 +8,4 @@ try:
     else:
         print('Ошибка')
 except ValueError:
-    print("Error")
+    print("Ошибка")

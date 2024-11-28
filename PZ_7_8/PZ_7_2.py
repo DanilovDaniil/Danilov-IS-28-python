@@ -11,4 +11,4 @@ try:
     Z = space(F)
     print(Z)
 except ValueError:
-    print('Error')
+    print('Ошибка')

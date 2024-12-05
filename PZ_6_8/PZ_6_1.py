@@ -7,8 +7,8 @@ try:
     for i in range(len(a)-1, -1, -1):
         if a[i] % 2 == 0:
             b.append(a[i])
-        k = len(b)
-        print("Количество четных чисел в порядке убывания: ", b)
-        print("Количество чисел:", k)
+    k = len(b)
+    print("Количество четных чисел в порядке убывания: ", b)
+    print("Количество чисел:", k)
 except ValueError:
     print('Ошибка')

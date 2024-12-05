@@ -19,4 +19,4 @@ try:
     vsrst(n)
     print("Количество участков элементы которых возрастают: ", vsrst(n))
 except ValueError:
-    print("Error")
+    print("Ошибка")

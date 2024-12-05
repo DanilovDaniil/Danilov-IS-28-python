@@ -11,4 +11,4 @@ try:
         print("Количество четных чисел в порядке убывания: ", b)
         print("Количество чисел:", k)
 except ValueError:
-    print('Error')
+    print('Ошибка')

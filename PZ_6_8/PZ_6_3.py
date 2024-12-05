@@ -19,4 +19,4 @@ try:
     g = srd_arfm(s)
     print(g)
 except ValueError:
-    print("Error")
+    print("Ошибка")

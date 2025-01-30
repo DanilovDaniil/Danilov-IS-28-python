@@ -4,11 +4,11 @@
 try:
     a = [1, 5, 2, 3, 4, 8, 9, 7, 10]
     b = []
-    for i in range(len(a)-1, -1, -1):
+    for i in range(len(a)-1, 0, -1):
         if a[i] % 2 == 0:
             b.append(a[i])
-        k = len(b)
-        print("Количество четных чисел в порядке убывания: ", b)
-        print("Количество чисел:", k)
+    k = len(b)
+    print("Количество четных чисел в порядке убывания: ", b)
+    print("Количество чисел:", k)
 except ValueError:
     print('Ошибка')

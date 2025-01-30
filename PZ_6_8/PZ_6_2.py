@@ -12,7 +12,8 @@ try:
                 s += 1
             else:
                 if s > 1:
-                    v = 1
+                    v += 1
+                    s = 1
         if s > 1:
             v += 1
         return v

@@ -6,12 +6,20 @@
 
 p = {"Магнит": {"молоко", "соль", "сахар"}, "Пятёрочка": {"мясо", "молоко", "сыр"}, "Перекрёсток": {"молоко", "творог", "сыр", "сахар"}}
 
-c = [i for i, prod in p.items() if "сыр" not in prod]
+cheese = []
+milk_sugar =[]
+salt = []
 
-ms = [i for i, prod in p.items() if "молоко" in prod and "сахар" in prod]
+for prod, i in p.items():
+    if "сыр" not in i:
+        cheese.append(prod)
 
-s = [i for i, prod in p.items() if "соль" in prod]
+    if "молоко" in i and "сахар" in i:
+        milk_sugar.append(prod)
 
-print("Магазины, в которых нельзя приобрести сыр:", c)
-print("Магазины, где можно приобрести одновременно молоко и сахар:", ms)
-print("Магазины, в которых можно приобрести соль:", s)
+    if "соль" in i:
+        salt.append(prod)
+
+print("Магазины без сыра:", cheese)
+print("магазины в которых можно приобрести одновременно молоко и сахар", milk_sugar)
+print("Магазины в которых можно приобрести соль:", salt)

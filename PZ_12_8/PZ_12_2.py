@@ -3,10 +3,10 @@
 
 def uppercase(s):
     for i in s:
-        if isinstance(i, str) and i.isalpha():  # Проверяем, что символ — буква
+        if isinstance(i, str) and i.isalpha():
             yield i.upper()
         else:
-            yield i  # Не буквы возвращаются без изменений
+            yield i
 
 
 s = ['a', 'b', 1, 'c', 'd', 2, 'e', 'f']

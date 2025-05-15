@@ -1,6 +1,7 @@
 # В двумерном списке элементы столбца N (N задать с клавиатуры) увеличить в два
 # раза.
 
+
 def double_column(matrix, column):
     for i in matrix:
         if column < len(i):

@@ -11,5 +11,4 @@ def uppercase(s):
 
 s = ['a', 'b', 1, 'c', 'd', 2, 'e', 'f']
 e = list(uppercase(s))
-
 print("Преобразованная последовательность:", e)

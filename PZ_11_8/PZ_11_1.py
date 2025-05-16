@@ -44,12 +44,11 @@ f3.close()
 
 f3 = open('data_3.txt', encoding='UTF-8')
 k = f3.read()
-k = k.split(', ')  # Разделяем по запятой с пробелом
+k = k.split(', ') 
 for i in range(len(k)):
     k[i] = int(k[i])
 f3.close()
 
-# 4. Вычисляем сумму элементов >10 во второй половине
 half = len(k) // 2
 sum_gt10 = 0
 for i in range(half, len(k)):

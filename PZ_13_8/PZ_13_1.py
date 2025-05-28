@@ -12,8 +12,7 @@ N = int(input("Введите номер столбца N начиная с 0: "
 
 ind = list(range(c))
 
-result = list(map(lambda r: list(map(lambda col_index: r[col_index] * 2 if col_index == N else r[col_index],ind)),
-                  matrix))
+result = list(map(lambda r: list(map(lambda c: r[c] * 2 if c == N else r[c], ind)), matrix))
 
 print("Результат:")
 for row in result:

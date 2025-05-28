@@ -13,7 +13,7 @@ cols = int(input("Введите количество столбцов: "))
 
 matrix = []
 for i in range(d):
-    b = list(map(int, input(f"Введите {cols} элементов строки {i+1}: ").split()))
+    b = list(map(int, input(f"Введите {cols} элементов строки {i+1}: ")))
     matrix.append(b)
 
 N = int(input("Введите номер столбца N начиная с 0: "))

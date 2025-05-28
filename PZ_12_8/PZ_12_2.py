@@ -3,7 +3,7 @@
 
 def up(s):
     for i in s:
-        yield i.upper()
+        yield i.swapcase()
 
 
 t = "d f g h n"

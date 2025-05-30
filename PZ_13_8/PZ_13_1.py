@@ -15,5 +15,5 @@ index = list(range(c))
 result = list(map(lambda r: list(map(lambda c: r[c] * 2 if c == N else r[c], index)), matrix))
 
 print("Результат:")
-for row in result:
-    print(row)
+for i in result:
+    print(i)

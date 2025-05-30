@@ -8,6 +8,6 @@ matrix = [list(map(int, input(f"Введите {c} элементов строк
 result = list(map(lambda i: [0] * c if i == r - 1 else matrix[i], range(r)))
 
 print("Результат:")
-for row in result:
-    print(row)
+for i in result:
+    print(i)
 

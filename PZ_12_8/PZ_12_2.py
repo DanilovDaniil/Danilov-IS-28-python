@@ -1,14 +1,13 @@
 # Составить генератор (yield), который преобразует все буквенные символы в
 # заглавные.
 
-def uppercase(s):
+def up(s):
     for i in s:
-        if isinstance(i, str) and i.isalpha():
-            yield i.upper()
-        else:
-            yield i
+        yield i.swapcase()
 
 
-s = ['a', 'b', 1, 'c', 'd', 2, 'e', 'f']
-e = list(uppercase(s))
-print("Преобразованная последовательность:", e)
+t = "d f g h n"
+g = up(t)
+
+for i in g:
+    print(i)

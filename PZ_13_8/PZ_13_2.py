@@ -1,13 +1,13 @@
 # В двумерном списке элементы последней строки заменить на 0.
 
-matrix = [
-    [1, 21, 8],
-    [45, 30, 100],
-    [678, 90, 9]
-]
+r = int(input("Введите количество строк: "))
+c = int(input("Введите количество столбцов: "))
 
-b = len(matrix) - 1
+matrix = [list(map(int, input(f"Введите {c} элементов строки {i+1} через пробел: ").split())) for i in range(r)]
 
-matrix[b] = [0] * len(matrix[b])
+result = list(map(lambda i: [0] * c if i == r - 1 else matrix[i], range(r)))
 
-print(matrix)
+print("Результат:")
+for i in result:
+    print(i)
+

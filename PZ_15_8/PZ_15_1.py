@@ -24,3 +24,4 @@ with sqlite3.connect('Zakazi.db') as con:
     cur.execute("SELECT * FROM users")
     result = cur.fetchall()
     print(result)
+

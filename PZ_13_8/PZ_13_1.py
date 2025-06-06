@@ -2,11 +2,16 @@
 # раза.
 
 
+import random
+
 r = int(input("Введите количество строк: "))
 c = int(input("Введите количество столбцов: "))
 
-matrix = list(map(lambda i: list(map(int, input(f"Введите {c} элементов строки {i+1} через пробел: ").split())),
-                  range(r)))
+matrix = [[random.randint(1, 100) for i in range(c)] for j in range(r)]
+
+print("\nСгенерированная матрица:")
+for i in matrix:
+    print(i)
 
 N = int(input("Введите номер столбца N начиная с 0: "))
 

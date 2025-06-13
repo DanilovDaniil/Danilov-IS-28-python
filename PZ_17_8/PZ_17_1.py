@@ -21,50 +21,50 @@ style.configure('TCheckbutton', background='#191e38', foreground='#ffff00')
 style.configure('TRadiobutton', background='#191e38', foreground='#ffff00')
 
 style.configure('Rounded.TButton',
-               background='#4CAF50',
-               foreground='white',
-               font=('Arial', 10, 'bold'),
-               borderwidth=0,
-               focusthickness=3,
-               focuscolor='#4CAF50',
-               relief='raised',
-               padding=10,
-               bordercolor='#4CAF50')
+                background='#4CAF50',
+                foreground='white',
+                font=('Arial', 10, 'bold'),
+                borderwidth=0,
+                focusthickness=3,
+                focuscolor='#4CAF50',
+                relief='raised',
+                padding=10,
+                bordercolor='#4CAF50')
 style.map('Rounded.TButton',
           background=[('active', '#45a049')])
 
 style.configure('Red.Rounded.TButton',
-               background='#F44336',
-               foreground='white',
-               font=('Arial', 10, 'bold'),
-               borderwidth=0,
-               focusthickness=3,
-               focuscolor='#F44336',
-               relief='raised',
-               padding=10,
-               bordercolor='#F44336')
+                background='#F44336',
+                foreground='white',
+                font=('Arial', 10, 'bold'),
+                borderwidth=0,
+                focusthickness=3,
+                focuscolor='#F44336',
+                relief='raised',
+                padding=10,
+                bordercolor='#F44336')
 style.map('Red.Rounded.TButton',
           background=[('active', '#d32f2f')])
 
 style.layout('Rounded.TButton', [
-    ('Button.border', {'children':
-        [('Button.focus', {'children':
-            [('Button.padding', {'children':
-                [('Button.label', {'side': 'left', 'expand': 1})]
-    })]})]})])
+    ('Button.border', {'children': [
+        ('Button.focus', {'children': [
+            ('Button.padding', {'children': [
+                ('Button.label', {'side': 'left', 'expand': 1})]
+            })]})]})])
 
 style.layout('Red.Rounded.TButton', [
-    ('Button.border', {'children':
-        [('Button.focus', {'children':
-            [('Button.padding', {'children':
-                [('Button.label', {'side': 'left', 'expand': 1})]
-    })]})]})])
+    ('Button.border', {'children': [
+        ('Button.focus', {'children': [
+            ('Button.padding', {'children': [
+                ('Button.label', {'side': 'left', 'expand': 1})]
+            })]})]})])
 
 top_line = tk.Frame(root, bg='#FF9900', height=50)
 top_line.pack(fill='x', pady=(0, 20))
 
-title_label = tk.Label(top_line, text="Sign Up", bg='#FF9900', fg='#FFFF99',
-                     font=('Arial', 16, 'bold'))
+title_label = tk.Label(top_line, text="Sign Up", bg='#FF9900', fg='#FFFF99', 
+                       font=('Arial', 16, 'bold'))
 title_label.pack(side='left', padx=20, pady=10)
 
 main_frame = ttk.Frame(root, padding="20")

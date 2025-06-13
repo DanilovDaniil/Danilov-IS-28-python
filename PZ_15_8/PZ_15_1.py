@@ -27,8 +27,12 @@ with sqlite3.connect('Zakazi.db') as con:
     cur.execute("INSERT INTO users VALUES (7, 'Товар 7', 'Заказчик1', '2022-09-07', 5, 40000)")
     cur.execute("INSERT INTO users VALUES (8, 'Товар 8', 'Заказчик3', '2020-07-18', 6, 75000)")
     cur.execute("INSERT INTO users VALUES (9, 'Товар 9', 'Заказчик1', '2022-08-27', 3, 7000)")
-    cur.execute("INSERT INTO users VALUES (10, 'Товар 10', 'Заказчик5', '2023-07-18', 9, 300000)")
+    cur.execute("INSERT INTO users VALUES (10, 'Товар 10', 'Заказчик5', '2023-07-18', 9, 30000)")
+
+    cur.execute("DELETE FROM users where id_tov = 5")
+    cur.execute("UPDATE users SET cell = 1500 WHERE zakazchik LIKE 'Заказчик4'")
     cur.execute("SELECT * FROM users")
+
     result = cur.fetchall()
     print(result)
 

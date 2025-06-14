@@ -6,7 +6,7 @@ import tkinter as tk
 from tkinter import ttk
 
 root = tk.Tk()
-root.title("Sign Up")
+root.title("PZ_17_1")
 root.geometry('500x560')
 root.configure(bg='#191e38')
 
@@ -23,28 +23,20 @@ style.configure('TRadiobutton', background='#191e38', foreground='#ffff00')
 style.configure('Rounded.TButton',
                 background='#4CAF50',
                 foreground='white',
-                font=('Arial', 10, 'bold'),
+                font=('Arial', 8, 'bold'),
                 borderwidth=0,
-                focusthickness=3,
                 focuscolor='#4CAF50',
-                relief='raised',
-                padding=10,
+                padding=5,
                 bordercolor='#4CAF50')
-style.map('Rounded.TButton',
-          background=[('active', '#45a049')])
 
 style.configure('Red.Rounded.TButton',
                 background='#F44336',
                 foreground='white',
-                font=('Arial', 10, 'bold'),
+                font=('Arial', 8, 'bold'),
                 borderwidth=0,
-                focusthickness=3,
                 focuscolor='#F44336',
-                relief='raised',
-                padding=10,
+                padding=5,
                 bordercolor='#F44336')
-style.map('Red.Rounded.TButton',
-          background=[('active', '#d32f2f')])
 
 style.layout('Rounded.TButton', [
     ('Button.border', {'children': [
@@ -63,7 +55,7 @@ style.layout('Red.Rounded.TButton', [
 top_line = tk.Frame(root, bg='#FF9900', height=50)
 top_line.pack(fill='x', pady=(0, 20))
 
-title_label = tk.Label(top_line, text="Sign Up", bg='#FF9900', fg='#FFFF99', 
+title_label = tk.Label(top_line, text="Sign Up", bg='#FF9900', fg='#FFFF99',
                        font=('Arial', 16, 'bold'))
 title_label.pack(side='left', padx=20, pady=10)
 
@@ -118,7 +110,8 @@ ttk.Radiobutton(gender_frame, text="Female", variable=gender_var, value="Female"
 row_counter += 1
 
 ttk.Label(main_frame, text="Country").grid(row=row_counter, column=0, sticky="w", pady=5, padx=10)
-countries = ["USA", "Canada", "UK", "Australia", "Germany", "France", "Japan", "Brazil"]
+countries = ["USA", "Canada", "China", "UK", "Australia", "Russia", "Germany", "Israil", "Spain", "France", "Japan",
+             "Brazil"]
 country_cb = ttk.Combobox(main_frame, values=countries, width=33, state="readonly")
 country_cb.set("USA")
 country_cb.grid(row=row_counter, column=1, sticky="w", padx=10)
@@ -162,10 +155,10 @@ buttons_frame = tk.Frame(bottom_line, bg='#FF9900')
 buttons_frame.pack(side='right', padx=20, pady=10)
 
 submit_btn = ttk.Button(buttons_frame, text="Submit", style='Rounded.TButton')
-submit_btn.pack(side='left', padx=10)
+submit_btn.pack(side='left', padx=1)
 
 cancel_btn = ttk.Button(buttons_frame, text="Cancel", command=root.destroy, style='Red.Rounded.TButton')
-cancel_btn.pack(side='left', padx=10)
+cancel_btn.pack(side='left', padx=3)
 
 for widget in main_frame.winfo_children():
     if isinstance(widget, ttk.Frame):

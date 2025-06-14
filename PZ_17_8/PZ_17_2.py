@@ -14,7 +14,7 @@ def convert_bytes():
 
 
 root = tk.Tk()
-root.title("Конвертер байтов в килобайты")
+root.title("PZ_17_2")
 root.geometry("400x200")
 
 label = tk.Label(root, text="Введите размер файла в байтах:")

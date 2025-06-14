@@ -2,16 +2,15 @@
 # любую задачу из ПЗ №№ 2 – 9.
 
 import tkinter as tk
-from tkinter import messagebox
 
 
 def convert_bytes():
     try:
         bytes_value = int(entry.get())
         kilobytes = bytes_value / 1024
-        result_label.config(text=f'Результат в килобайтах: {kilobytes:.2f}')
+        result_label.config(text=f'Результат в килобайтах: {kilobytes:.2f}', fg='black')
     except ValueError:
-        messagebox.showerror("Ошибка", "Пожалуйста, введите целое число")
+        result_label.config(text="Ошибка: введите целое число", fg='red')
 
 
 root = tk.Tk()
@@ -27,7 +26,7 @@ entry.pack(pady=5)
 convert_button = tk.Button(root, text="Конвертировать", command=convert_bytes)
 convert_button.pack(pady=10)
 
-result_label = tk.Label(root, text="Результат в килобайтах: ")
+result_label = tk.Label(root, text="Результат в килобайтах: ", fg='black')
 result_label.pack(pady=10)
 
 root.mainloop()

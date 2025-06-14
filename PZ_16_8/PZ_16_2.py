@@ -9,7 +9,7 @@ class Animal:
         self.age = age
 
     def breathe(self):
-        print(f"{self.name} дышит...")
+        print(f"{self.name} дышит")
 
     def eat(self, food):
         print(f"{self.name} ест {food}")
@@ -31,7 +31,7 @@ class Cat(Animal):
         super().__init__(name, age)
 
     def purr(self):
-        print(f"{self.name} мурлычет: Мррр...")
+        print(f"{self.name} мурлычет: Мррр")
 
 
 if __name__ == "__main__":

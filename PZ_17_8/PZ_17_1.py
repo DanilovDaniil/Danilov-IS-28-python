@@ -56,7 +56,7 @@ top_line = tk.Frame(root, bg='#FF9900', height=50)
 top_line.pack(fill='x', pady=(0, 20))
 
 title_label = tk.Label(top_line, text="Sign Up", bg='#FF9900', fg='#FFFF99',
-                       font=('Arial', 16, 'bold'))
+                       font=('Arial', 16))
 title_label.pack(side='left', padx=20, pady=10)
 
 main_frame = ttk.Frame(root, padding="20")

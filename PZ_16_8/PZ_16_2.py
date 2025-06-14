@@ -7,7 +7,6 @@ class Animal:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-        self.alive = True
 
     def breathe(self):
         print(f"{self.name} дышит...")
